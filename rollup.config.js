@@ -26,7 +26,8 @@ module.exports = {
     commonjs(),
     typescript({
       tsconfig: './tsconfig.json',
-      declaration: false,
+      declaration: true,
+      declarationDir: './dist',
       sourceMap: false,
       noEmitOnError: false,
       exclude: ['node_modules/**']
