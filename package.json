@@ -1,0 +1,53 @@
+{
+  "name": "suprasy-render",
+  "version": "0.1.0",
+  "description": "A Rich Text Renderer built with Slate.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": "^18.3.1"
+  },
+  "keywords": [
+    "rich-text",
+    "editor",
+    "slate",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/css": "^11.13.4",
+    "@types/classnames": "^2.3.0",
+    "@types/is-hotkey": "^0.1.10",
+    "classnames": "^2.5.1",
+    "is-hotkey": "^0.2.0",
+    "lucide-react": "^0.456.0",
+    "react-player": "^2.16.0",
+    "slate": "^0.110.2",
+    "slate-history": "^0.110.3",
+    "slate-react": "^0.111.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-typescript": "^12.1.1",
+    "@swc/core": "^1.9.1",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "rollup": "^4.24.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.6.3"
+  }
+}
